@@ -1,3 +1,3 @@
 # HackerRank-CTCI
 
-my solutions :D
+my solutions - in Java :D
