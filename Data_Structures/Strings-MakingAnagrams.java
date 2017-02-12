@@ -11,19 +11,17 @@ public class Solution {
         int[] one = new int[26];
         int[] two = new int[26];
         
-        int maxLength = first.length();
-        if(second.length() > maxLength)
-            maxLength = second.length();
-        
-        for(int i = 0; i < maxLength; i++){
+        for(int i = 0; i < first.length(); i++){
 
             char oneIndex = first.charAt(i);
-            char twoIndex = second.charAt(i);
-            
-            // if(oneIndex >= 97 && oneIndex <= 122) - for lowercase charcters;
-            // if(oneIndex >= 65 && oneIndex <= 90) - for uppercase charcters;
-            
             one[oneIndex - 'a'] += 1;
+            
+            // if(index >= 97 && index <= 122) - for lowercase charcters;
+            // if(index >= 65 && index <= 90) - for uppercase charcters;
+        }
+        
+        for(int i = 0; i < second.length(); i++){
+            char twoIndex = second.charAt(i);
             two[twoIndex - 'a'] += 1;
         }
         
